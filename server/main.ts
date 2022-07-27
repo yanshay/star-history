@@ -149,8 +149,8 @@ const startServer = async () => {
 
   app.use(router.routes()).use(router.allowedMethods());
 
-  app.listen(3000, () => {
-    logger.info(`server running on port ${3000}`);
+  app.listen(5000, () => {
+    logger.info(`server running on port ${5000}`);
   });
 };
 
