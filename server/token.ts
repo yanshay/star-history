@@ -4,7 +4,7 @@ import logger from "./logger";
 import api from "./common/api";
 
 // Token env file path in render.com: All secret files you create are available to read at the root of your repo.
-const ENV_PATH_IN_RENDER = "./token.env";
+const ENV_PATH_IN_RENDER = "../token.env";
 // For local dev, you need to pass the ENVPATH value in env variables.
 // e.g. ENVPATH=PATH_TO_YOUR_FILE pnpm dev
 // For production, we set a token.env file in render.com,
