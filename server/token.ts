@@ -24,7 +24,7 @@ export const initTokenFromEnv = async () => {
   //   logger.error("Token not found");
   //   process.exit(-1);
   // }
-  const envTokenString = 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
+  const envTokenString = "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"
 
   const tokenList = envTokenString.split(/\r?\n/);
   // Call GitHub API to check token usability
