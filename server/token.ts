@@ -4,7 +4,7 @@ import logger from "./logger";
 import api from "./common/api";
 
 // Token env file path in render.com: All secret files you create are available to read at the root of your repo.
-const ENV_PATH_IN_RENDER = "../token.env";
+const ENV_PATH_IN_RENDER = "./token.env";
 // For local dev, you need to pass the ENVPATH value in env variables.
 // e.g. ENVPATH=PATH_TO_YOUR_FILE pnpm dev
 // For production, we set a token.env file in render.com,
@@ -24,7 +24,7 @@ export const initTokenFromEnv = async () => {
   //   logger.error("Token not found");
   //   process.exit(-1);
   // }
-  const envTokenString = "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"
+  const envTokenString = "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"
 
   const tokenList = envTokenString.split(/\r?\n/);
   // Call GitHub API to check token usability
