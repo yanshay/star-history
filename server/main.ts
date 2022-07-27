@@ -4,8 +4,8 @@ import Router from "koa-router";
 import cors from "@koa/cors";
 import { JSDOM } from "jsdom";
 import logger from "./logger";
-import XYChart from "../packages/xy-chart";
-import { convertDataToChartData, getRepoData } from "../common/chart";
+import XYChart from "./packages/xy-chart";
+import { convertDataToChartData, getRepoData } from "./common/chart";
 import cache from "./cache";
 import {
   getChartWidthWithSize,
@@ -13,7 +13,7 @@ import {
   getBase64Image,
 } from "./utils";
 import { getNextToken, initTokenFromEnv } from "./token";
-import { ChartMode } from "../types/chart";
+import { ChartMode } from "./types/chart";
 import { CHART_SIZES, CHART_TYPES, MAX_REQUEST_AMOUNT } from "./const";
 
 const startServer = async () => {

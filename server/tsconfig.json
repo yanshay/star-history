@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es2015"],
-    "rootDir": "../",
+    "rootDir": "./",
     "outDir": "dist",
     "module": "CommonJS",
     "moduleResolution": "node",
@@ -10,5 +10,5 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
   },
-  "include": ["./*.ts", "../common/*.ts", "../packages/**/*.ts", "../types/*.ts"]
+  "include": ["./*.ts", "./common/*.ts", "./packages/**/*.ts", "./types/*.ts"]
 }
