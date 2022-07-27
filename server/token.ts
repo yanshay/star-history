@@ -15,15 +15,16 @@ const savedTokens: string[] = [];
 let index = 0;
 
 export const initTokenFromEnv = async () => {
-  if (!fs.existsSync(envFilePath)) {
-    logger.error("Token file not found with path ", envFilePath);
-    process.exit(-1);
-  }
-  const envTokenString = fs.readFileSync(envFilePath).toString();
-  if (!envTokenString) {
-    logger.error("Token not found");
-    process.exit(-1);
-  }
+  // if (!fs.existsSync(envFilePath)) {
+  //   logger.error("Token file not found with path ", envFilePath);
+  //   process.exit(-1);
+  // }
+  // const envTokenString = fs.readFileSync(envFilePath).toString();
+  // if (!envTokenString) {
+  //   logger.error("Token not found");
+  //   process.exit(-1);
+  // }
+  const envTokenString = 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
 
   const tokenList = envTokenString.split(/\r?\n/);
   // Call GitHub API to check token usability
